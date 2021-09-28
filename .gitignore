@@ -1,0 +1,8 @@
+/.idea
+/_h5ai
+/corruptions-dungeons/
+/f-list-multi-compare/
+/Sources/
+/share/*
+!/share/.htaccess
+!/share/_h5ai.header.html

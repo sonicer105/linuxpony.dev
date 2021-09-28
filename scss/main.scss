@@ -1,0 +1,507 @@
+/*! Main Stylesheet (V1.0.0) - Makes use of normalize.css v8.0.1 (MIT License) github.com/necolas/normalize.css */
+
+@import "normalize";
+@import "fonts";
+@import "fontawesome";
+@import "slick";
+@import "slick-theme";
+
+#lp-root {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    min-height: 100vh;
+    background: #222222;
+    color: #ffffff;
+    line-height: 1.25rem;
+
+    &, * {
+        box-sizing: border-box;
+    }
+
+    pre, code, kbd, samp {
+        font-family: "Roboto Mono", monospace;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    a {
+        transition: color 250ms;
+        text-decoration: none;
+
+        &:link, &:visited {
+            color: #467cca;
+        }
+
+        &:hover, &:active {
+            color: #ffffff;
+        }
+    }
+
+    .button:link, .button:visited {
+        transition: background-color 250ms, border-top-color 250ms, color 250ms;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background: #333333;
+        border-top: 5px solid transparent;
+        text-decoration: none;
+
+        &.large {
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+        }
+    }
+
+    .button:hover, .button:active {
+        border-top-color: #467cca;
+        background: #222222;
+    }
+
+    .button-bar {
+        text-align: center;
+        .button {
+            margin-bottom: 0.25rem;
+        }
+    }
+
+    header {
+        display: flex;
+        align-items: flex-start;
+        box-shadow: 0 0 5px #111111;
+        background: #333333;
+        height: 3rem;
+
+        .main-nav-open {
+            display: inline-block;
+            padding: 0.75rem 0.75rem 0 0.75rem;
+            font-size: 1.5rem;
+
+            &:link, &:visited {
+                color: #ffffff;
+            }
+
+            &:hover, &:active {
+                color: #467cca;
+            }
+        }
+
+        .header-text {
+            display: inline-block;
+            padding: 0.85rem 0 0 0.5rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    #main-nav {
+        transition: left 500ms;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -500px;
+        width: 400px;
+        height: 100vh;
+        background: #333333;
+        box-shadow: 0 0 5px #111111;
+        z-index: 5;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        a:link, a:visited {
+            transition: background-color 250ms, border-right-color 250ms;
+            color: #ffffff;
+            background: #333333;
+            border-right: 5px solid transparent;
+            font-size: 1.2rem;
+            display: block;
+            padding: 1rem;
+        }
+
+        a:hover, a:active {
+            border-right-color: #467cca;
+            background: #222222;
+        }
+
+        .fas, .far, .fab, .fa {
+            padding-right: 2rem;
+        }
+
+        &.open {
+            left: 0;
+        }
+    }
+
+    main {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding-bottom: 5rem;
+
+        section {
+            margin: 1rem 0;
+            padding: 1px 1rem 1rem;
+            background: #333333;
+            box-shadow: 0 0 5px #111111;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .two-column-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .column {
+                width: 49%;
+            }
+        }
+    }
+
+    .character-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: block;
+            margin: 0 0.5rem 0.5rem 0;
+            padding-right: 0.25rem;
+            color: #4aa158;
+            background: #1b3c21;
+            border: solid 1px #2d6236;
+            font-weight: bold;
+
+            .detail {
+                display: inline-block;
+                color: #e0e0e0;
+                background: #2d6236;
+                padding: 0.25rem;
+                font-weight: normal;
+            }
+        }
+        &.character-colors {
+            li {
+                color: #ffffff;
+            }
+            .swift-mane {
+                background: #1f3f96;
+                border-color: darken(#1f3f96, 10%);
+                .detail {
+                    background: darken(#1f3f96, 10%);
+                }
+            }
+            .swift-coat {
+                background: #353432;
+                border-color: darken(#353432, 10%);
+                .detail {
+                    background: darken(#353432, 10%);
+                }
+            }
+            .swift-back {
+                background: #2b2c6d;
+                border-color: darken(#2b2c6d, 10%);
+                .detail {
+                    background: darken(#2b2c6d, 10%);
+                }
+            }
+            .swift-belly {
+                background: #252525;
+                border-color: darken(#252525, 10%);
+                .detail {
+                    background: darken(#252525, 10%);
+                }
+            }
+            .swift-peen-base {
+                background: #1c3fcf;
+                border-color: darken(#1c3fcf, 10%);
+                .detail {
+                    background: darken(#1c3fcf, 10%);
+                }
+            }
+            .swift-peen-tip {
+                background: #0b2691;
+                border-color: darken(#0b2691, 10%);
+                .detail {
+                    background: darken(#0b2691, 10%);
+                }
+            }
+            .swift-ears {
+                background: #d17290;
+                border-color: darken(#d17290, 10%);
+                .detail {
+                    background: darken(#d17290, 10%);
+                }
+            }
+            .swift-eyes {
+                background: #285993;
+                border-color: darken(#285993, 10%);
+                .detail {
+                    background: darken(#285993, 10%);
+                }
+            }
+            .swift-magic {
+                color: #000;
+                background: #15f729;
+                border-color: darken(#15f729, 10%);
+                .detail {
+                    color: #000;
+                    background: darken(#15f729, 10%);
+                }
+            }
+            .swift-wings {
+                color: #000;
+                background: #91daec;
+                border-color: darken(#91daec, 10%);
+                .detail {
+                    color: #000;
+                    background: darken(#91daec, 10%);
+                }
+            }
+            .swift-d-mane {
+                background: #2131e7;
+                border-color: darken(#2131e7, 10%);
+                .detail {
+                    background: darken(#2131e7, 10%);
+                }
+            }
+            .swift-d-coat {
+                color: #000;
+                background: #4dddea;
+                border-color: darken(#4dddea, 10%);
+                .detail {
+                    color: #000;
+                    background: darken(#4dddea, 10%);
+                }
+            }
+            .swift-d-peen {
+                background: #4a9ea6;
+                border-color: darken(#4a9ea6, 10%);
+                .detail {
+                    background: darken(#4a9ea6, 10%);
+                }
+            }
+            .swift-d-eyes {
+                color: #000;
+                background: #39cd4b;
+                border-color: darken(#39cd4b, 10%);
+                .detail {
+                    color: #000;
+                    background: darken(#39cd4b, 10%);
+                }
+            }
+            .swift-d-cm-primary {
+                color: #000;
+                background: #d4af37;
+                border-color: darken(#d4af37, 10%);
+                .detail {
+                    color: #000;
+                    background: darken(#d4af37, 10%);
+                }
+            }
+            .swift-d-cm-secondary {
+                background: #855e42;
+                border-color: darken(#855e42, 10%);
+                .detail {
+                    background: darken(#855e42, 10%);
+                }
+            }
+        }
+    }
+
+    /* Sliders */
+
+    .slider-nav img, .slider-main img{
+        object-fit: cover;
+        object-position: center;
+    }
+    .slider-main img{
+        height: 50vh;
+        object-fit: contain;
+    }
+    .slider-nav {
+        width: 90%;
+        margin: 0 5% 2rem;
+    }
+    .slick-dots li button:before{
+        color: #fff;
+    }
+
+    /* End of Sliders */
+
+    /* 3D Render */
+
+    #swift-3d-preview {
+        height: 50vh;
+        width: 100%;
+    }
+    #swift-3d-preview-poster {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: contain;
+    }
+    #button-3d-load {
+        border: none;
+        background-color: #000;
+        color: #fff;
+        display: inline-block;
+        padding: 10px 18px;
+        font-weight: 500;
+        box-shadow: 0 0 8px rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,.25);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        z-index: 100;
+        &:hover {
+            background-color: #333;
+        }
+    }
+    #swift-3d-popup {
+        z-index: 5;
+        background: #ccc;
+        display: none;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        bottom: 1rem;
+        right: 1rem;
+        &.open {
+            display: block;
+        }
+        model-viewer {
+            width: 100%;
+            height: 100%;
+            .poster {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .swift-close-model {
+            font-size: 2rem;
+            padding: 13px 10px;
+            display: block;
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background: #fff;
+            color: #000;
+            &:hover, &:active {
+                background: #eee;
+            }
+        }
+    }
+
+    /* End of 3D Render */
+
+    .confirm-age {
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+
+        &.open {
+            display: flex;
+        }
+
+        .container {
+            padding: 1rem;
+            width: 100%;
+            max-width: 500px;
+            background: #333333;
+            box-shadow: 0 0 5px #111111;
+            text-align: center;
+
+            .header img {
+                width: 100%;
+                margin: 0 auto;
+                height: 300px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    footer {
+        box-shadow: 0 0 5px #111111;
+        padding-top: 2rem;
+        position: absolute;
+        text-align: center;
+        background: #333333;
+        bottom: 0;
+        width: 100%;
+        height: 5rem;
+    }
+
+    .click-guard {
+        display: block;
+        align-items: unset;
+        justify-content: unset;
+        opacity: 0;
+        background-color: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 4;
+        pointer-events: none;
+        transition: opacity 250ms;
+        &.open {
+            opacity: 0.5;
+            pointer-events: unset;
+        }
+    }
+    .click-guard-load {
+        display: none;
+    }
+
+    .sr-only {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    #return-to-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        width: 3em;
+        height: 3em;
+        border-radius: 100%;
+        text-decoration: none;
+        background: #ffffff;
+        color: #000000;
+        transition: 250ms;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+
+        &:hover, &:active {
+            color: #467cca;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+        }
+
+        span {
+            font-size: 1.5em;
+        }
+    }
+}

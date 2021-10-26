@@ -17,6 +17,8 @@ function lPInit() {
 
         /* Setup close nav buttons */
         $('.main-nav-close, .main-nav-close-and-navigate').on('click', function (e) {
+            $(document.body).removeClass("3d-open");
+            $('body').removeAttr('style');
             if($(this).hasClass('main-nav-close')) e.preventDefault();
             $('#main-nav, .click-guard, .confirm-age, #swift-3d-popup').removeClass('open');
         });
@@ -37,8 +39,15 @@ function lPInit() {
         /* Setup 3D Load Button */
         $('#button-3d-load, .button-3d-load-secondary').on('click', function (e) {
             e.preventDefault();
+            $(document.body).addClass("3d-open");
+            $('body').css({'overflow':'hidden'});
             $('.click-guard, #swift-3d-popup').addClass('open');
             $('#swift-model-viewer').attr('src', '/obj/model_v3.glb');
+            // noinspection JSJQueryEfficiency
+            if(!window.modelViwerScriptLoaded) {
+                $(document.head).append('<script type="module" src="/js/model-viewer.min.js">');
+                window.modelViwerScriptLoaded = true;
+            }
         });
 
         /* Setup back to top widget */
@@ -62,21 +71,36 @@ function lPInit() {
             slidesToScroll: 1,
             dots: true,
             centerMode: true,
-            focusOnSelect: true
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }
+            ]
         });
 
-        window.lastWidth = -1
-        setInterval(function (){
-            if (window.lastWidth === window.innerWidth) return;
-            window.lastWidth = window.innerWidth;
-            $('.slider-nav img').each(function (){
-                $(this).css('height', $(this).css('width'));
-            });
-        }, 1000)
+        // window.lastWidth = -1
+        // setInterval(function (){
+        //     if (window.lastWidth === window.innerWidth) return;
+        //     window.lastWidth = window.innerWidth;
+        //     $('.slider-nav img').each(function (){
+        //         $(this).css('height', $(this).css('width'));
+        //     });
+        // }, 1000)
     })
 }
 
 function lPToggleOnScroll() {
+    if($(document.body).hasClass("3d-open")) return;
     $('#return-to-top').css('bottom',
         (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? '1em' : '-3em'
     );

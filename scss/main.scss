@@ -51,11 +51,25 @@
             font-size: 1.2rem;
             padding: 1rem 2rem;
         }
+        &.round {
+            color: #000000;
+            background: #ffffff;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
     }
 
     .button:hover, .button:active {
-        border-top-color: #467cca;
-        background: #222222;
+        &.round {
+            color: #467cca;
+        }
+        &:not(.round){
+            border-top-color: #467cca;
+            background: #222222;
+        }
     }
 
     .button-bar {
@@ -321,7 +335,9 @@
     }
     .slider-main img{
         height: 50vh;
+        width: 100%;
         object-fit: contain;
+        background: rgba(0,0,0,0.25);
     }
     .slider-nav {
         width: 90%;
@@ -329,6 +345,14 @@
     }
     .slick-dots li button:before{
         color: #fff;
+    }
+    .slide-wrapper {
+        position: relative;
+        a {
+            position: absolute;
+            bottom: 1em;
+            right: 1em;
+        }
     }
 
     /* End of Sliders */

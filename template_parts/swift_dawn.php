@@ -90,42 +90,50 @@
             </ul>
             <h2>References</h2>
             <div id="swift-slider-main" class="slider-main" data-slick='{"asNavFor":"#swift-slider-nav"}'>
-                <img data-lazy="/img/temrin-commission-2-sml.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Swift Dawn">
-                <?php if($nsfw) { ?>
-                    <img data-lazy="/img/d1f1s-commission-4-nsfw.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                <?php } else { ?>
-                    <img data-lazy="/img/d1f1s-commission-4-sfw.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                <?php } ?>
-                <?php if($nsfw) { ?>
-                    <img data-lazy="/img/redxbacon-commission-1-nsfw-2.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                <?php } else { ?>
-                    <img data-lazy="/img/redxbacon-commission-1-sfw-2.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                <?php } ?>
-                <img data-lazy="/img/lynnthewagon-commission-1.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                <img data-lazy="/img/whiteskypony-commission-1.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Swift Dawn">
-                <div id="swift-3d-preview">
-                    <img id="swift-3d-preview-poster" data-lazy="/img/render.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn">
-                    <button id="button-3d-load">
-                        <span class="fas fa-download"></span>
-                        View 3D Model (88 MB)
-                    </button>
+                <div class="slide-wrapper">
+                    <img data-lazy="/img/temrin-commission-2-sml.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Swift Dawn">
+                    <a href="https://derpibooru.org/images/1991572" rel="noopener nofollow" target="_blank" class="button round">
+                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    </a>
+                </div>
+                <div class="slide-wrapper">
+                    <img data-lazy="/img/d1f1s-commission-4-<?php echo ($nsfw)? 'nsfw' : 'sfw' ?>.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
+                    <a href="https://derpibooru.org/images/<?php echo ($nsfw)? '2547025' : '2547024' ?>" rel="noopener nofollow" target="_blank" class="button round">
+                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    </a>
+                </div>
+                <div class="slide-wrapper">
+                    <img data-lazy="/img/redxbacon-commission-1-<?php echo ($nsfw)? 'nsfw' : 'sfw' ?>-2.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
+                    <a href="https://derpibooru.org/images/<?php echo ($nsfw)? '2656898' : '2656896' ?>" rel="noopener nofollow" target="_blank" class="button round">
+                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    </a>
+                </div>
+                <div class="slide-wrapper">
+                    <img data-lazy="/img/lynnthewagon-commission-1.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
+                    <a href="https://derpibooru.org/images/2604967" rel="noopener nofollow" target="_blank" class="button round">
+                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    </a>
+                </div>
+                <div class="slide-wrapper">
+                    <img data-lazy="/img/whiteskypony-commission-1.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Swift Dawn">
+                    <a href="https://derpibooru.org/images/2621807" rel="noopener nofollow" target="_blank" class="button round">
+                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    </a>
+                </div>
+                <div class="slide-wrapper">
+                    <img data-lazy="/img/render.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn">
+                    <a href="https://derpibooru.org/images/2690379" rel="noopener nofollow" target="_blank" class="button round">
+                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    </a>
                 </div>
             </div>
             <div id="swift-slider-nav" class="slider-nav" data-slick='{"asNavFor":"#swift-slider-main"}'>
-                <img data-lazy="/img/temrin-commission-2-sml.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Swift Dawn">
-                <?php if($nsfw) { ?>
-                    <img data-lazy="/img/d1f1s-commission-4-nsfw.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                <?php } else { ?>
-                    <img data-lazy="/img/d1f1s-commission-4-sfw.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                <?php } ?>
-                <?php if($nsfw) { ?>
-                    <img data-lazy="/img/redxbacon-commission-1-nsfw-2.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                <?php } else { ?>
-                    <img data-lazy="/img/redxbacon-commission-1-sfw-2.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                <?php } ?>
-                <img data-lazy="/img/lynnthewagon-commission-1.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                <img data-lazy="/img/whiteskypony-commission-1.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Swift Dawn">
-                <img data-lazy="img/render.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn">
+                <img data-lazy="/img/temrin-commission-2-sml-sml.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Swift Dawn">
+                <img data-lazy="/img/d1f1s-commission-4-<?php echo ($nsfw)? 'nsfw' : 'sfw' ?>-sml.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
+                <img data-lazy="/img/redxbacon-commission-1-<?php echo ($nsfw)? 'nsfw' : 'sfw' ?>-2-sml.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
+                <img data-lazy="/img/lynnthewagon-commission-1-sml.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
+                <img data-lazy="/img/whiteskypony-commission-1-sml.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Swift Dawn">
+                <img data-lazy="img/render-sml.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn">
             </div>
             <div class="button-bar">
                 <a href="#" class="button large button-3d-load-secondary">
@@ -133,7 +141,7 @@
                     View 3D Model (88 MB)
                 </a>
                 <a href="https://derpibooru.org/tags/oc-colon-swift+dawn" target="_blank"
-                   rel="nofollow noreferrer noopener" class="button large">
+                   rel="noopener nofollow" class="button large">
                     <span class="fas fa-images fa-fw" aria-hidden="true"></span>
                     More on Derpi
                 </a>

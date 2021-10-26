@@ -3,12 +3,45 @@
     $title = ($title ?? 'Home') . ' | linuxpony.dev';
 ?>
 <!DOCTYPE html>
-<html lang="en-CA">
+<html lang="en-CA" prefix="og: https://ogp.me/ns#">
 <head>
+    <!-- Encoding, Preload, and Viewport -->
     <meta charset="UTF-8">
-    <title><?php echo $title ?></title>
+    <link rel="preload" href="<?php lp_append_url_with_ver('/css/main.css') ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="preload" href="<?php lp_append_url_with_ver('/css/main.css') ?>" as="style">
+    <!-- SEO -->
+    <link rel="canonical" href="https://linuxpony.dev/">
+    <meta name="robots" content="index, follow">
+    <title><?php echo $title ?></title>
+    <meta property="og:title" content="<?php echo $title ?>" />
+    <meta property="og:description" content="A homepage for LinuxPony and his characters references." />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="linuxpony.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://linuxpony.dev/" />
+    <meta property="og:image" content="https://linuxpony.dev/android-chrome-192x192.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="192" />
+    <meta property="og:image:width" content="192" />
+    <meta property="og:image:alt" content="A portrait of Swift Dawn the Changeling" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@LinuxPonyAD" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "LinuxPony",
+            "url": "https://linuxpony.dev/",
+            "image": "https://linuxpony.dev/android-chrome-512x512.png",
+            "sameAs": [
+                "https://twitter.com/LinuxPonyAD",
+                "https://twitter.com/LinuxPony",
+                "https://derpibooru.org/profiles/LinuxPony",
+                "https://discordapp.com/users/174641580878069760",
+                "https://linuxpony.dev/"
+            ]
+        }
+    </script>
     <!-- Favicon/App -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php lp_append_url_with_ver('/apple-touch-icon.png') ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php lp_append_url_with_ver('/favicon-32x32.png') ?>">
@@ -20,7 +53,7 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#2b5797">
     <!-- Stylesheets/Scripts -->
-    <link rel="stylesheet" href="<?php lp_append_url_with_ver('/css/main.css') ?>">
+    <noscript><link rel="stylesheet" href="<?php lp_append_url_with_ver('/css/main.css') ?>"></noscript>
     <style>
         /* Temporary style until the style sheet loads in */
         .click-guard {
@@ -45,7 +78,7 @@
 <!--    <script async src="<?php lp_append_url_with_ver('/js/modernizr-custom.min.js') ?>"></script>-->
     <script async src="<?php lp_append_url_with_ver('/js/slick.min.js') ?>"></script>
     <script async src="<?php lp_append_url_with_ver('/js/main.js') ?>"></script>
-    <script async type="module" src="<?php lp_append_url_with_ver('/js/model-viewer.min.js') ?>"></script>
+<!--    <script async type="module" src="<?php lp_append_url_with_ver('/js/model-viewer.min.js') ?>"></script>-->
 </head>
 <body id="lp-root">
 <header>

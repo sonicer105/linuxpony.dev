@@ -80,7 +80,7 @@
     <script async src="<?php lp_append_url_with_ver('/js/main.js') ?>"></script>
 <!--    <script async type="module" src="<?php lp_append_url_with_ver('/js/model-viewer.min.js') ?>"></script>-->
 </head>
-<body id="lp-root">
+<body id="lp-root" class="<?php echo ($webp) ? 'webp' : 'no-webp' ?>">
 <header>
     <a href="#" class="main-nav-open">
         <span class="fas fa-bars fa-fw" aria-hidden="true"></span>

@@ -4,15 +4,14 @@
         <div class="column">
             <h1>Swift Dawn</h1>
             <ul class="character-details">
-                <li><span class="detail">Nickname</span> Swifty</li>
                 <li><span class="detail">Species</span> Changeling</li>
                 <li><span class="detail">Gender</span> Male</li>
                 <li><span class="detail">Age</span> Young Adult</li>
                 <li><span class="detail">Orientation</span> Pan</li>
-                <li><span class="detail">Personality</span> Laid back, Friendly</li>
                 <li><span class="detail">Hometown</span> Canterlot</li>
                 <li><span class="detail">Occupation</span> Civil Engineer</li>
                 <li><span class="detail">Status</span> Single</li>
+                <li><span class="detail">Personality</span> Laid back, Friendly</li>
             </ul>
             <p>
                 Swift Dawn is a male changeling of average stature and build by pony standards. He is a male, young

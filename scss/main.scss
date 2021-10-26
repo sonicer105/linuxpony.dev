@@ -59,6 +59,7 @@
             height: 45px;
             text-align: center;
             padding: 0.5rem 0;
+            box-shadow: 0 0 2px rgba(0,0,0,0.75);
         }
     }
 
@@ -125,6 +126,16 @@
             list-style: none;
         }
 
+        .title {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            font-weight: bold;
+            &:not(:first-child){
+                margin-top: 1.2rem;
+            }
+        }
+
         a:link, a:visited {
             transition: background-color 250ms, border-right-color 250ms;
             color: #ffffff;
@@ -156,9 +167,11 @@
 
         section {
             margin: 1rem 0;
-            padding: 1px 1rem 1rem;
             background: #333333;
             box-shadow: 0 0 5px #111111;
+            &:not(#home){
+                padding: 1px 1rem 1rem;
+            }
         }
     }
 
@@ -171,6 +184,48 @@
                 width: 49%;
             }
         }
+    }
+
+    .home-splash {
+        height: 86vh;
+        background-image: url("/img/pridark-commission-1.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        h1 {
+            font-size: 6em;
+            margin: 0.4em;
+            @media (max-width: 500px) {
+                font-size: 4em;
+            }
+        }
+        p {
+            margin: 0.5em;
+        }
+        .small {
+            font-size: 0.8em;
+        }
+        a {
+            text-decoration: underline;
+            &:link, &:visited {
+                color: #cccccc;
+            }
+            &:hover, &:active {
+                color: #ffffff;
+            }
+        }
+        & > * {
+            text-shadow: 0 0 0.25em #000000;
+        }
+    }
+
+    &.webp .home-splash {
+        background-image: url("/img/pridark-commission-1.webp");
     }
 
     .character-details {
@@ -322,6 +377,163 @@
                 border-color: darken(#855e42, 10%);
                 .detail {
                     background: darken(#855e42, 10%);
+                }
+            }
+            .mythic-mane-primary {
+                background: #5e401a;
+                border-color: darken(#5e401a, 10%);
+                .detail {
+                    background: darken(#5e401a, 10%);
+                }
+            }
+            .mythic-mane-secondary {
+                background: #cd8731;
+                border-color: darken(#cd8731, 10%);
+                .detail {
+                    background: darken(#cd8731, 10%);
+                }
+            }
+            .mythic-coat {
+                background: #6a6a62;
+                border-color: darken(#6a6a62, 10%);
+                .detail {
+                    background: darken(#6a6a62, 10%);
+                }
+            }
+            .mythic-wing-membrane {
+                background: #623f19;
+                border-color: darken(#623f19, 10%);
+                .detail {
+                    background: darken(#623f19, 10%);
+                }
+            }
+            .mythic-genitals-area {
+                background: #3d3d33;
+                border-color: darken(#3d3d33, 10%);
+                .detail {
+                    background: darken(#3d3d33, 10%);
+                }
+            }
+            .mythic-hair-band {
+                background: #3f3daa;
+                border-color: darken(#3f3daa, 10%);
+                .detail {
+                    background: darken(#3f3daa, 10%);
+                }
+            }
+            .mythic-eyes {
+                background: #b800fe;
+                border-color: darken(#b800fe, 10%);
+                .detail {
+                    background: darken(#b800fe, 10%);
+                }
+            }
+            .mythic-cm {
+                background: #3f3daa;
+                border-color: darken(#3f3daa, 10%);
+                .detail {
+                    background: darken(#3f3daa, 10%);
+                }
+            }
+            .sugar-mane-primary {
+                background: #166007;
+                border-color: darken(#166007, 10%);
+                .detail {
+                    background: darken(#166007, 10%);
+                }
+            }
+            .sugar-mane-secondary {
+                background: #00af28;
+                border-color: darken(#00af28, 10%);
+                .detail {
+                    background: darken(#00af28, 10%);
+                }
+            }
+            .sugar-coat-primary {
+                background: #9f512b;
+                border-color: darken(#9f512b, 10%);
+                .detail {
+                    background: darken(#9f512b, 10%);
+                }
+            }
+            .sugar-coat-secondary {
+                color: #000;
+                background: #f3a260;
+                border-color: darken(#f3a260, 10%);
+                .detail {
+                    color: #000;
+                    background: darken(#f3a260, 10%);
+                }
+            }
+            .sugar-freckles {
+                background: #601208;
+                border-color: darken(#601208, 10%);
+                .detail {
+                    background: darken(#601208, 10%);
+                }
+            }
+            .sugar-eyes {
+                background: #1400ff;
+                border-color: darken(#1400ff, 10%);
+                .detail {
+                    background: darken(#1400ff, 10%);
+                }
+            }
+            .rinne-coat-primary {
+                color: #000;
+                background: #80d9f2;
+                border-color: darken(#80d9f2, 10%);
+                .detail {
+                    color: #000;
+                    background: darken(#80d9f2, 10%);
+                }
+            }
+            .rinne-coat-secondary {
+                background: #4b4b4b;
+                border-color: darken(#4b4b4b, 10%);
+                .detail {
+                    background: darken(#4b4b4b, 10%);
+                }
+            }
+            .rinne-coat-markings {
+                background: #005fe5;
+                border-color: darken(#005fe5, 10%);
+                .detail {
+                    background: darken(#005fe5, 10%);
+                }
+            }
+            .rinne-inner-ears {
+                color: #000;
+                background: #c6e8f2;
+                border-color: darken(#c6e8f2, 10%);
+                .detail {
+                    color: #000;
+                    background: darken(#c6e8f2, 10%);
+                }
+            }
+            .rinne-claws {
+                color: #000;
+                background: #ffffff;
+                border-color: darken(#ffffff, 10%);
+                .detail {
+                    color: #000;
+                    background: darken(#ffffff, 10%);
+                }
+            }
+            .rinne-flesh {
+                color: #000;
+                background: #e0c2ff;
+                border-color: darken(#e0c2ff, 10%);
+                .detail {
+                    color: #000;
+                    background: darken(#e0c2ff, 10%);
+                }
+            }
+            .rinne-eyes {
+                background: #222298;
+                border-color: darken(#222298, 10%);
+                .detail {
+                    background: darken(#222298, 10%);
                 }
             }
         }

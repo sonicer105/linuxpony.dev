@@ -16,7 +16,7 @@
                   environment-image="neutral" auto-rotate>
         <img class="poster" src="/img/render.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn" slot="poster">
     </model-viewer>
-    <a href="#" class="swift-close-model main-nav-close">
+    <a href="javascript:void(0)" class="swift-close-model main-nav-close">
         <span class="sr-only">Close</span>
         <span class="fas fa-times fa-fw" aria-hidden="true"></span>
     </a>

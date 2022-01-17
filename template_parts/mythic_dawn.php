@@ -88,6 +88,12 @@
                         <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
+                <div class="slide-wrapper">
+                    <img data-lazy="/img/whiteskypony-commission-2.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Mythic Dawn">
+                    <a href="https://derpibooru.org/images/2786299" rel="noopener nofollow" target="_blank" class="button round">
+                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    </a>
+                </div>
             </div>
             <div id="mythic-slider-nav" class="slider-nav" data-slick='{"asNavFor":"#mythic-slider-main"}'>
                 <img data-lazy="/img/flutterthrash-commission-1-sml.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Mythic Dawn">
@@ -96,9 +102,10 @@
                 <img data-lazy="/img/louvely-commission-1-sml.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Mythic Dawn">
                 <?php } ?>
                 <img data-lazy="/img/nekroled-commission-3-alt-sml.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Mythic Dawn">
+                <img data-lazy="/img/whiteskypony-commission-2-sml.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Mythic Dawn">
             </div>
             <div class="button-bar">
-                <a href="#" class="button large button-noop">
+                <a href="javascript:void(0)" class="button large button-noop">
                     <span class="fas fa-cube fa-fw" aria-hidden="true"></span>
                     3D Model Coming Soon
                 </a>

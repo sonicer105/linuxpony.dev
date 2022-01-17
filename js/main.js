@@ -11,7 +11,6 @@ function lPInit() {
     $(function () {
         /* Setup open nav button */
         $('.main-nav-open').on('click', function (e) {
-            e.preventDefault();
             $('#main-nav, .click-guard').addClass('open');
         });
 
@@ -19,13 +18,20 @@ function lPInit() {
         $('.main-nav-close, .main-nav-close-and-navigate').on('click', function (e) {
             $(document.body).removeClass("3d-open");
             $('body').removeAttr('style');
-            if($(this).hasClass('main-nav-close')) e.preventDefault();
             $('#main-nav, .click-guard, .confirm-age, #swift-3d-popup').removeClass('open');
         });
 
+        /* Setup open nav sidebar on tab through */
+        $('a').on('focus', function (e){
+            if($.contains(document.getElementById('main-nav'), e.target)){
+                $('#main-nav, .click-guard').addClass('open');
+            } else if ($('#main-nav').hasClass('open')) {
+                $('#main-nav, .click-guard').removeClass('open');
+            }
+        })
+
         /* Setup age confirmation */
         $('.open-nsfw-confirmation').on('click', function (e) {
-            e.preventDefault();
             $('#main-nav').removeClass('open');
             $('.confirm-age').addClass('open');
             $('.option-share, .option-enable').hide();
@@ -38,7 +44,6 @@ function lPInit() {
 
         /* Setup 3D Load Button */
         $('#button-3d-load, .button-3d-load-secondary').on('click', function (e) {
-            e.preventDefault();
             $(document.body).addClass("3d-open");
             $('body').css({'overflow':'hidden'});
             $('.click-guard, #swift-3d-popup').addClass('open');
@@ -52,17 +57,6 @@ function lPInit() {
 
         /* Setup back to top widget */
         $(window).on('scroll', lPToggleOnScroll).trigger('scroll');
-        $('#return-to-top').on('click', function (e) {
-            e.preventDefault();
-            window.scrollTo({top: 0, behavior: 'smooth'});
-            if(!!location.hash) {
-                try {
-                    history.pushState({}, "", "#");
-                } catch (e) {
-                    // Empty
-                }
-            }
-        });
 
         /* Setup Slick Carousel */
         $('.slider-main:not(.no-init)').slick({

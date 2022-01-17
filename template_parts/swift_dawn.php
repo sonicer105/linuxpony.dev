@@ -135,7 +135,7 @@
                 <img data-lazy="img/render-sml.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn">
             </div>
             <div class="button-bar">
-                <a href="#" class="button large button-3d-load-secondary">
+                <a href="javascript:void(0)" class="button large button-3d-load-secondary">
                     <span class="fas fa-cube fa-fw" aria-hidden="true"></span>
                     View 3D Model (88 MB)
                 </a>

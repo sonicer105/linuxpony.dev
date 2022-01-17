@@ -61,7 +61,7 @@
             align-items: center;
             justify-content: center;
             opacity: 1;
-            background-color: #fff;
+            background-color: #000;
             position: fixed;
             top: 0;
             left: 0;
@@ -70,6 +70,7 @@
             z-index: 9999;
         }
         .click-guard-load {
+            color: #fff;
             font-size: 2rem;
             font-family: sans-serif;
         }
@@ -82,11 +83,14 @@
 </head>
 <body id="lp-root" class="<?php echo ($webp) ? 'webp' : 'no-webp' ?>">
 <header>
-    <a href="#" class="main-nav-open">
-        <span class="fas fa-bars fa-fw" aria-hidden="true"></span>
-        <span class="sr-only">Jump to Main Navigation</span>
+    <a href="javascript:void(0)" class="main-nav-open" aria-hidden="true" tabindex="-1">
+        <span class="fas fa-bars fa-fw"></span>
     </a>
     <span class="header-text">
         linuxpony.dev
     </span>
+    <div class="skip-to-content-wrapper">
+        <a id="skip-to-content" href="#home">Skip to Content</a>
+    </div>
 </header>
+<div class="header-spacer"></div>

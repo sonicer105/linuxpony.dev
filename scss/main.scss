@@ -6,6 +6,10 @@
 @import "slick";
 @import "slick-theme";
 
+html {
+    scroll-behavior: smooth;
+}
+
 #lp-root {
     font-family: "Roboto", sans-serif;
     position: relative;
@@ -81,11 +85,41 @@
     }
 
     header {
+        z-index: 2;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
         display: flex;
         align-items: flex-start;
         box-shadow: 0 0 5px #111111;
         background: #333333;
         height: 3rem;
+
+        .skip-to-content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            height: 3rem;
+            pointer-events: none;
+
+
+            #skip-to-content {
+                pointer-events: all;
+                color: white;
+                display: block;
+                padding: 0.5rem 1rem;
+                border-radius: 0.25rem;
+                border: 2px solid #fff;
+
+                transform: translateY(-200%);
+                &:focus {
+                    transform: translateY(0%);
+                }
+            }
+        }
 
         .main-nav-open {
             display: inline-block;
@@ -108,6 +142,10 @@
         }
     }
 
+    .header-spacer {
+        height: 3rem;
+    }
+
     #main-nav {
         transition: left 500ms;
         display: block;
@@ -118,6 +156,7 @@
         height: 100vh;
         background: #333333;
         box-shadow: 0 0 5px #111111;
+        overflow: auto;
         z-index: 5;
 
         ul {
@@ -186,9 +225,72 @@
         }
     }
 
+    #about {
+        .profile {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #000000;
+        }
+        .bigger, .socials {
+            font-size: 1.5em;
+        }
+        .stack-text-bold {
+            font-weight: bold;
+        }
+        .socials {
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                color: #000;
+                margin-bottom: 0.5rem;
+                .stack-text-ad {
+                    font-weight: bold;
+                    color: rgba(255,0,0,0);
+                    transition: color 250ms;
+                }
+                .svg-social-icon {
+                    width: 60px;
+                    height: 48px;
+                    padding: 12px 18px;
+                    path {
+                        fill: #000000;
+                        transition: fill 250ms;
+                    }
+                }
+            }
+            a:hover, a:active {
+                color: #467cca;
+                .stack-text-ad {
+                    color: rgba(255,0,0,1);
+                }
+                .svg-social-icon path {
+                    fill: #467cca;
+                }
+            }
+        }
+        @media (min-width: 768px) {
+            .summary-card {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .summary-text {
+                    padding-left: 1em;
+                    flex-grow: 1;
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            .profile {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
     .home-splash {
         height: 86vh;
-        background-image: url("/img/pridark-commission-1.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/pridark-commission-1.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -221,11 +323,24 @@
         }
         & > * {
             text-shadow: 0 0 0.25em #000000;
+            animation: splashFade 1.5s ease-out;
         }
     }
 
     &.webp .home-splash {
-        background-image: url("/img/pridark-commission-1.webp");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/pridark-commission-1.webp");
+    }
+
+    @keyframes splashFade {
+        0% {
+            opacity: 0;
+        }
+        33% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     .character-details {
@@ -700,10 +815,32 @@
         &.open {
             opacity: 0.5;
             pointer-events: unset;
+            animation: 250ms clickGuardFadeIn ease-out;
+        }
+        &:not(.open){
+            animation: 250ms clickGuardFadeOut ease-out;
         }
     }
     .click-guard-load {
         display: none;
+    }
+
+    @keyframes clickGuardFadeOut {
+        0% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes clickGuardFadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0.5;
+        }
     }
 
     .sr-only {

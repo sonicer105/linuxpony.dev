@@ -21,7 +21,7 @@
             </p>
         </div>
         <div class="footer">
-            <a href="#" class="button large main-nav-close">Cancel</a>
+            <a href="javascript:void(0)" class="button large main-nav-close">Cancel</a>
             <a href="/?nsfw=yes" class="button large option-enable">Confirm</a>
             <a href="/share" class="button large option-share">Confirm</a>
         </div>

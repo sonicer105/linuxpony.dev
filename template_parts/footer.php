@@ -16,7 +16,7 @@
                   alt="A 3D model viewer for Swift Dawn and Mythic Dawn"
                   environment-image="neutral" auto-rotate>
         <img id="swift-poster" class="poster" src="/img/swift-render.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Preview of the 3D Render of Swift Dawn" slot="poster">
-        <img id="mythic-poster" class="poster" src="/img/mythic-poster.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Preview of the 3D Render of Mythic Dawn" slot="poster">
+        <img id="mythic-poster" class="poster" src="/img/mythic-render.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Preview of the 3D Render of Mythic Dawn" slot="poster">
     </model-viewer>
     <a href="javascript:void(0)" class="close-model main-nav-close">
         <span class="sr-only">Close</span>

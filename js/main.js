@@ -16,9 +16,9 @@ function lPInit() {
 
         /* Setup close nav buttons */
         $('.main-nav-close, .main-nav-close-and-navigate').on('click', function (e) {
-            $(document.body).removeClass("3d-open");
+            $(document.body).removeClass("open-3d");
             $('body').removeAttr('style');
-            $('#main-nav, .click-guard, .confirm-age, #swift-3d-popup').removeClass('open');
+            $('#main-nav, .click-guard, .confirm-age, #popup-3d').removeClass('open');
         });
 
         /* Setup open nav sidebar on tab through */
@@ -44,10 +44,13 @@ function lPInit() {
 
         /* Setup 3D Load Button */
         $('#button-3d-load, .button-3d-load-secondary').on('click', function (e) {
-            $(document.body).addClass("3d-open");
+            let data = $(this).data();
+            $(document.body).addClass("open-3d");
             $('body').css({'overflow':'hidden'});
-            $('.click-guard, #swift-3d-popup').addClass('open');
-            $('#swift-model-viewer').attr('src', '/obj/model_v3.glb');
+            $('.click-guard, #popup-3d').addClass('open');
+            $('#model-viewer').attr('exposure', data.exposure).attr('src', '/obj/' + data.model);
+            $('.poster').hide();
+            $('#' + data.poster).show();
             // noinspection JSJQueryEfficiency
             if(!window.modelViwerScriptLoaded) {
                 $(document.head).append('<script type="module" src="/js/model-viewer.min.js">');
@@ -97,7 +100,7 @@ function lPInit() {
 }
 
 function lPToggleOnScroll() {
-    if($(document.body).hasClass("3d-open")) return;
+    if($(document.body).hasClass("open-3d")) return;
     $('#return-to-top').css('bottom',
         (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? '1em' : '-3em'
     );
@@ -105,7 +108,7 @@ function lPToggleOnScroll() {
         (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? '0' : '1'
     );
     // Close any navs or popups if it's open if we are scrolling
-    $('#main-nav, .click-guard, .confirm-age, #swift-3d-popup').removeClass('open');
+    $('#main-nav, .click-guard, .confirm-age, #popup-3d').removeClass('open');
 }
 
 lPWaitForJquery();

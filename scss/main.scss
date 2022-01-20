@@ -686,11 +686,11 @@ html {
 
     /* 3D Render */
 
-    #swift-3d-preview {
+    #preview-3d {
         height: 50vh;
         width: 100%;
     }
-    #swift-3d-preview-poster {
+    #preview-poster-3d {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -713,7 +713,7 @@ html {
             background-color: #333;
         }
     }
-    #swift-3d-popup {
+    #popup-3d {
         z-index: 5;
         background: #ccc;
         display: none;
@@ -734,7 +734,7 @@ html {
                 object-fit: contain;
             }
         }
-        .swift-close-model {
+        .close-model {
             font-size: 2rem;
             padding: 13px 10px;
             display: block;

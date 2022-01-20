@@ -7,16 +7,18 @@
 <div class="main-nav-close click-guard">
     <div class="click-guard-load">Loading, Please Wait...</div>
 </div>
-<div id="swift-3d-popup">
-    <model-viewer id="swift-model-viewer"
+<div id="popup-3d">
+    <model-viewer id="model-viewer"
                   camera-controls
                   shadow-intensity="1"
+                  exposure="10"
                   src=""
-                  alt="A 3D model of the Changeling named Swift Dawn"
+                  alt="A 3D model viewer for Swift Dawn and Mythic Dawn"
                   environment-image="neutral" auto-rotate>
-        <img class="poster" src="/img/render.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn" slot="poster">
+        <img id="swift-poster" class="poster" src="/img/swift-render.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Preview of the 3D Render of Swift Dawn" slot="poster">
+        <img id="mythic-poster" class="poster" src="/img/whiteskypony-commission-2.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Preview of the 3D Render of Mythic Dawn" slot="poster">
     </model-viewer>
-    <a href="javascript:void(0)" class="swift-close-model main-nav-close">
+    <a href="javascript:void(0)" class="close-model main-nav-close">
         <span class="sr-only">Close</span>
         <span class="fas fa-times fa-fw" aria-hidden="true"></span>
     </a>

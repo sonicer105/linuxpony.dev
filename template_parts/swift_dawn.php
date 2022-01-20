@@ -120,7 +120,7 @@
                     </a>
                 </div>
                 <div class="slide-wrapper">
-                    <img data-lazy="/img/render.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn">
+                    <img data-lazy="/img/swift-render.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn">
                     <a href="https://derpibooru.org/images/2690379" rel="noopener nofollow" target="_blank" class="button round">
                         <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
@@ -132,10 +132,10 @@
                 <img data-lazy="/img/redxbacon-commission-1-<?php echo ($nsfw)? 'nsfw' : 'sfw' ?>-2-sml.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
                 <img data-lazy="/img/lynnthewagon-commission-1-sml.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
                 <img data-lazy="/img/whiteskypony-commission-1-sml.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Swift Dawn">
-                <img data-lazy="img/render-sml.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn">
+                <img data-lazy="/img/swift-render-sml.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn">
             </div>
             <div class="button-bar">
-                <a href="javascript:void(0)" class="button large button-3d-load-secondary">
+                <a href="javascript:void(0)" class="button large button-3d-load-secondary" data-model="swift.glb" data-exposure="1" data-poster="swift-poster">
                     <span class="fas fa-cube fa-fw" aria-hidden="true"></span>
                     View 3D Model (88 MB)
                 </a>

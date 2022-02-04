@@ -290,7 +290,7 @@ html {
 
     .home-splash {
         height: 86vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/pridark-commission-1.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/pridark-commission-5.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -328,7 +328,7 @@ html {
     }
 
     &.webp .home-splash {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/pridark-commission-1.webp");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/pridark-commission-5.webp");
     }
 
     @keyframes splashFade {

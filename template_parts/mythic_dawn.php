@@ -14,7 +14,7 @@
                 <li><span class="detail">Personality</span> High energy, Carefree, Serious at times</li>
             </ul>
             <p>
-                Swift Dawn is a female bat pony of average stature and build for a bat pony of her gender and age. She
+                Mythic Dawn is a female bat pony of average stature and build for a bat pony of her gender and age. She
                 is a female, young adult, with a light and dark striped brown mane and tail, and gray coat. Her bangs
                 are straight cut and her mane is done up in a ponytail secured by a purple hair band. Sprouting from her
                 back is two gray bat wings with a dark brown membrane. Her tail is long and neat, matching her mane.

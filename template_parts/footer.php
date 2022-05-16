@@ -7,6 +7,7 @@
 <div class="main-nav-close click-guard">
     <div class="click-guard-load">Loading, Please Wait...</div>
 </div>
+<?php if ($include_3d_model){ ?>
 <div id="popup-3d">
     <model-viewer id="model-viewer"
                   camera-controls
@@ -23,5 +24,6 @@
         <span class="fas fa-times fa-fw" aria-hidden="true"></span>
     </a>
 </div>
+<?php } ?>
 </body>
 </html>

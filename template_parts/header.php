@@ -1,6 +1,7 @@
 <?php
     if (!defined('LP_VER')) die;
     $title = ($title ?? 'Home') . ' | linuxpony.dev';
+    $description = 'A homepage for LinuxPony and his characters references.';
 ?>
 <!DOCTYPE html>
 <html lang="en-CA" prefix="og: https://ogp.me/ns#">
@@ -14,7 +15,7 @@
     <meta name="robots" content="index, follow">
     <title><?php echo $title ?></title>
     <meta property="og:title" content="<?php echo $title ?>" />
-    <meta property="og:description" content="A homepage for LinuxPony and his characters references." />
+    <meta property="og:description" content="<?php echo $description ?>" />
     <meta property="og:locale" content="en_CA" />
     <meta property="og:site_name" content="linuxpony.dev" />
     <meta property="og:type" content="website" />
@@ -25,7 +26,7 @@
     <meta property="og:image:width" content="192" />
     <meta property="og:image:alt" content="A portrait of Swift Dawn the Changeling" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="@LinuxPonyAD" />
+    <meta name="twitter:creator" content="@LinuxPony" />
     <script type="application/ld+json">
         {
             "@context": "https://schema.org/",

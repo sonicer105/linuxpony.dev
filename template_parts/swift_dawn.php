@@ -91,38 +91,38 @@
             <div id="swift-slider-main" class="slider-main" data-slick='{"asNavFor":"#swift-slider-nav"}'>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/temrin-commission-2-sml.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Swift Dawn">
-                    <a href="https://derpibooru.org/images/1991572" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/1991572" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/d1f1s-commission-4-<?php echo ($nsfw)? 'nsfw' : 'sfw' ?>.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                    <a href="https://derpibooru.org/images/<?php echo ($nsfw)? '2547025' : '2547024' ?>" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/<?php echo ($nsfw)? '2547025' : '2547024' ?>" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/redxbacon-commission-1-<?php echo ($nsfw)? 'nsfw' : 'sfw' ?>-2.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                    <a href="https://derpibooru.org/images/<?php echo ($nsfw)? '2656898' : '2656896' ?>" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/<?php echo ($nsfw)? '2656898' : '2656896' ?>" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/lynnthewagon-commission-1.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Swift Dawn">
-                    <a href="https://derpibooru.org/images/2604967" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/2604967" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/whiteskypony-commission-1.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Swift Dawn">
-                    <a href="https://derpibooru.org/images/2621807" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/2621807" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/swift-render.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Preview of the 3D Render of the Changeling Swift Dawn">
-                    <a href="https://derpibooru.org/images/2690379" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/2690379" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
             </div>

@@ -64,40 +64,40 @@
             <div id="mythic-slider-main" class="slider-main" data-slick='{"asNavFor":"#mythic-slider-nav"}'>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/flutterthrash-commission-1.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Mythic Dawn">
-                    <a href="https://derpibooru.org/images/2199616" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/2199616" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/flutterthrash-commission-2.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Mythic Dawn">
-                    <a href="https://derpibooru.org/images/2368960" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/2368960" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
                 <?php if($nsfw) { ?>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/louvely-commission-1.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Mythic Dawn">
-                    <a href="https://derpibooru.org/images/2253488" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/2253488" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
                 <?php } ?>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/nekroled-commission-3-alt.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Mythic Dawn">
-                    <a href="https://derpibooru.org/images/2626632" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/2626632" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/whiteskypony-commission-2.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Mythic Dawn">
-                    <a href="https://derpibooru.org/images/2786299" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/2786299" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
                 <div class="slide-wrapper">
                     <img data-lazy="/img/mythic-render.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Mythic Dawn">
-                    <a href="https://derpibooru.org/images/2788416" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/2788416" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
             </div>

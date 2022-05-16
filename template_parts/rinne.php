@@ -49,8 +49,8 @@
             <div id="sugar-slider-main" class="slider-main no-init">
                 <div class="slide-wrapper">
                     <img src="/img/rinne-v2.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Reference Sheet for Rinne the Avali">
-                    <a href="https://furbooru.org/images/119869" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://furbooru.org/images/119869" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
             </div>

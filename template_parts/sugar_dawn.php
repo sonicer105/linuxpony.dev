@@ -73,8 +73,8 @@
             <div id="sugar-slider-main" class="slider-main no-init">
                 <div class="slide-wrapper">
                     <img src="/img/lrusu-commission-1.<?php echo ($webp)? 'webp' : 'jpg' ?>" alt="Reference Sheet for Sugar Dawn">
-                    <a href="https://derpibooru.org/images/2350648" rel="noopener nofollow" target="_blank" class="button round">
-                        <span class="fas fa-expand fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
+                    <a href="https://derpibooru.org/images/2350648" rel="noopener nofollow" target="_blank" class="button round" title="View on Derpibooru">
+                        <span class="fas fa-external-link fa-fw" aria-hidden="true"></span><span class="sr-only">View Full Version</span>
                     </a>
                 </div>
             </div>

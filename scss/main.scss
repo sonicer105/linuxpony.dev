@@ -754,6 +754,25 @@ html {
 
     /* End of 3D Render */
 
+    /* Boop */
+
+    #boop {
+        background: #0AA;
+    }
+
+    #svg-wrapper {
+        height: 82vh;
+
+        svg {
+            display: block;
+            height: 100%;
+            width: auto;
+            margin: 0 auto;
+        }
+    }
+
+    /* End of Boop */
+
     .confirm-age {
         display: none;
         position: fixed;

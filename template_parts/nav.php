@@ -6,13 +6,18 @@
     <ul>
         <li class="title"><span aria-hidden="true">#</span> Menu</li>
         <li>
-            <a href="#home" class="main-nav-close-and-navigate">
+            <a href="<?php echo_anchor_link('#home') ?>" class="main-nav-close-and-navigate">
                 <span class="fas fa-home fa-fw" aria-hidden="true"></span> Home
             </a>
         </li>
         <li>
-            <a href="#about" class="main-nav-close-and-navigate">
+            <a href="<?php echo_anchor_link('#about') ?>" class="main-nav-close-and-navigate">
                 <span class="fas fa-user-circle fa-fw" aria-hidden="true"></span> About Me
+            </a>
+        </li>
+        <li>
+            <a href="/boop.php" class="main-nav-close-and-navigate">
+                <span class="fas fa-question-circle fa-fw" aria-hidden="true"></span> ...Boop?
             </a>
         </li>
         <li>
@@ -28,22 +33,22 @@
         </li>
         <li class="title"><span aria-hidden="true">#</span> Character Refs</li>
         <li>
-            <a href="#swift" class="main-nav-close-and-navigate">
+            <a href="<?php echo_anchor_link('#swift') ?>" class="main-nav-close-and-navigate">
                 <span class="fas fa-alicorn fa-fw" aria-hidden="true"></span> Swift Dawn
             </a>
         </li>
         <li>
-            <a href="#mythic" class="main-nav-close-and-navigate">
+            <a href="<?php echo_anchor_link('#mythic') ?>" class="main-nav-close-and-navigate">
                 <span class="fas fa-pegasus fa-fw" aria-hidden="true"></span> Mythic Dawn
             </a>
         </li>
         <li>
-            <a href="#sugar" class="main-nav-close-and-navigate">
+            <a href="<?php echo_anchor_link('#sugar') ?>" class="main-nav-close-and-navigate">
                 <span class="fas fa-horse fa-fw" aria-hidden="true"></span> Sugar Dawn
             </a>
         </li>
         <li>
-            <a href="#rinne" class="main-nav-close-and-navigate">
+            <a href="<?php echo_anchor_link('#rinne') ?>" class="main-nav-close-and-navigate">
                 <span class="fas fa-feather-alt fa-fw" aria-hidden="true"></span> Rinne
             </a>
         </li>
@@ -54,7 +59,7 @@
                 <span class="fas fa-exclamation-triangle fa-fw" aria-hidden="true"></span> Enable NSFW
             </a>
             <?php } else { ?>
-            <a href="/?nsfw=no">
+            <a href="<?php echo $_SERVER['PHP_SELF'] . '?nsfw=no' ?>">
                 <span class="fas fa-exclamation-triangle fa-fw" aria-hidden="true"></span> Disable NSFW
             </a>
             <?php } ?>

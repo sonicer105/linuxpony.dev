@@ -8,4 +8,5 @@
     <div id="svg-wrapper" aria-hidden="true">
         <?php echo file_get_contents('img/favitwink-commission-1-clean-dynamic.svg'); ?>
     </div>
+    <a href="https://derpibooru.org/profiles/Favitwink" rel="noopener nofollow" target="_blank">Art by Favitwink</a>
 </section>

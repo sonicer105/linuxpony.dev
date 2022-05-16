@@ -758,18 +758,36 @@ html {
 
     #boop {
         background: #0AA;
+        margin: 0.5rem 0;
+        text-align: center;
+
+        a {
+            color: #fff;
+            &:hover {
+                color: #ccc;
+            }
+        }
     }
 
     #svg-wrapper {
-        height: 80vh;
+        padding-bottom: 0.5rem;
+        @media (min-width: 720px) {
+            height: 76vh;
+        }
 
         svg {
             display: block;
-            height: 100%;
-            width: auto;
+            width: 100%;
+            height: auto;
             margin: 0 auto;
+            @media (min-width: 720px) {
+                width: auto;
+                height: 100%;
+            }
         }
     }
+
+
 
     /* End of Boop */
 

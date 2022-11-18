@@ -1,6 +1,6 @@
 <?php
 
-define('LP_VER', '1.1.4');
+define('LP_VER', '1.1.5');
 
 //ini_set('display_errors', '1');
 //ini_set('display_startup_errors', '1');

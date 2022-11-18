@@ -6,10 +6,10 @@
         <div class="summary-text">
             <p>
                 <span class="bigger">Hi, I'm <a class="p-name u-url" href="https://linuxpony.dev/">LinuxPony</a>!</span>
-                I'm a full stack developer from <span class="p-country-name">Canada</span> employed writing code. I work
+                <span class="p-note">I'm a full stack developer from <span class="p-country-name">Canada</span> employed writing code. I work
                 on a number of code projects on the side like maintaining the Vanhoover Pony Expo website among other
                 things. I'm also a tech enthusiast, brony, furry, and convention volunteer! I love meeting new friends
-                and hanging out so don't hesitate to say hi!
+                and hanging out so don't hesitate to say hi!</span>
             </p>
             <?php if($nsfw) { ?>
             <h2>Get to know my interests</h2>

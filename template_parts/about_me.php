@@ -5,7 +5,7 @@
         <img class="u-photo profile" src="/img/cipherwave_commission_1.<?php echo ($webp)? 'webp' : 'png' ?>" alt="Profile picture of LinuxPony">
         <div class="summary-text">
             <p>
-                <span class="bigger">Hi, I'm <a class="p-name u-url" href="https://linuxpony.dev/">LinuxPony!</a></span>
+                <span class="bigger">Hi, I'm <a class="p-name u-url" href="https://linuxpony.dev/">LinuxPony</a>!</span>
                 I'm a full stack developer from <span class="p-country-name">Canada</span> employed writing code. I work
                 on a number of code projects on the side like maintaining the Vanhoover Pony Expo website among other
                 things. I'm also a tech enthusiast, brony, furry, and convention volunteer! I love meeting new friends
